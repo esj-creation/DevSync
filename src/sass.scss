@@ -1,0 +1,559 @@
+$BgDeep : rgb(1, 35, 30);
+$BgDeepLight : rgb(0, 61, 52);
+$BgMedium : rgb(0, 144, 122);
+$BgMediumLight : rgb(0, 223, 190);
+$BgLight: rgb(144, 255, 238);
+
+
+
+.nav{
+    top: 0;
+    position: fixed;
+    background:transparent;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    font-weight: bold;
+    z-index: 999;
+    transition: background-color 0.5s ease;
+
+}
+.nav-logo{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    background: -webkit-linear-gradient(rgb(255, 0, 225),rgb(0, 247, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav-logo:hover{
+    background: -webkit-linear-gradient(rgb(255, 0, 0),$BgDeep);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s ease-out;
+}
+.nav-ul-first, .nav-ul-middle,.nav-ul-last{
+    float: left;   
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+.nav-ul-first{
+
+    flex:2;
+}
+.nav-ul-middle{
+    flex: 6;
+}
+.nav-ul-last{
+    flex: 4;
+}
+.nav-link{
+    text-decoration: none;
+    padding:10px ;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    border-radius: 50px;
+}
+.nav-link:hover{
+    background-color: rgba(255, 255, 255, 0.627);
+    transition: 1s;
+    color: rgb(0, 0, 0);
+
+}
+.nav.color{
+    background-color: rgb(20, 145, 139);
+}
+
+
+
+
+.mainTop{
+    width: 100%;
+    height: 80%;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+
+}
+.background-image{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+.content{
+    margin-top: 15vh;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(0, 255, 251);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contentH{
+    font-size: 3rem;
+    flex: 4;
+}
+.contentH2{
+    font-size: 2rem;
+    flex: 4;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.contentP{
+    flex: 4;
+    font-size: 1.5rem;
+    color: rgb(174, 173, 173);
+    text-shadow: 1px 1px 1px rgb(0, 255, 242);
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10% ;
+    text-align: justify;
+    line-height: 2rem;
+}
+.mainMiddle{
+    margin-top: 85vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.whyLearningHere{
+    color: rgb(40, 40, 40);
+    width: max-content;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 5px black;
+}
+.MiddleContent{
+    margin-left: 10%;
+    margin-right: 10%;
+    display:block;
+    width: 80%;
+}
+.benefits{
+    width: 40%;
+    height:15vw;
+    text-align: justify;
+    vertical-align:middle;
+    display: inline-block;
+    padding-bottom: 50px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-radius: 30px;
+    animation: pulsate 10s infinite linear;
+}
+
+@keyframes pulsate{
+    0%{
+        border-color:rgb(97, 183, 237);
+    }
+    50%{
+        border-color:rgb(224, 89, 89);
+    }
+    100%{
+        border-color: rgb(105, 189, 241);
+    }
+}
+.MiddleH2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+.MiddleP{
+    text-align: justify;
+    padding: 1vw;
+    display:inline-flex;
+    margin-bottom: none;
+}
+.strong{
+    text-align: center;
+    margin-top: 2vw;
+    color: rgb(50, 50, 50);
+    text-shadow: 0px 0px 1px black;
+
+}
+.mainBottom{
+    background-image: url(./img/pexels-tara-winstead-8386440.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    align-items: center;
+}
+.BottomSub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.path3{
+    color: white;
+    font-weight: bold;
+    width:30% ;
+    margin-left:3.33333%;
+    margin-right: 3.33333%;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    font-size:3rem;
+    text-shadow: 0px 0px 5px black;
+}
+.path3:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.446);
+    color: rgb(34, 34, 34);
+    transition: 1s;
+    text-shadow: 0px 0px 5px white;
+}
+.BottomH1{
+    text-align: center;
+    color: rgb(47, 47, 47);
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 5px rgb(255, 255, 255);
+}
+.footer{
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(50, 50, 50);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: rgb(195, 195, 195);
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (max-width: 1366px) {
+    body{
+        background: lightseagreen;
+    }
+}
+@media screen and (min-width: 1150px){
+    .benefits{
+        height: 10vw;
+    }
+}
+@media  screen and (max-width: 1024px) {
+
+    .nav-link{
+        padding:5px ;
+        margin-left:5px;
+        margin-right:5px;
+        border-radius: 25px;
+    }
+    .contentP{
+
+        font-size: 1.1rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        line-height: 1.5rem;
+    }
+    .whyLearningHere{
+        font-size: 1.2rem;
+    }
+    .benefits{
+        width: 50%;
+        height:14vw;
+    }
+    .MiddleContent{
+        width: 90%;
+    }
+    .path3{
+        font-size:2rem;
+    }
+    .contentH2{
+        font-size: 1.5rem;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+
+}
+@media screen and (max-width:880px) {
+    .benefits{
+        width: 50%;
+        height:19vw;
+    }
+    .MiddleContent{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 768px){
+    .benefits{
+        width: 50%;
+        height:26vw;
+    }
+}
+
+
+
+
+@media screen and (max-width: 660px){   
+    .nav-link{
+        padding:5px ;
+        margin-left:2px;
+        margin-right:2px;
+        border-radius: 25px;
+    }
+    .contentP{
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px rgb(255, 177, 250);
+        line-height: 1.5rem;
+    }
+    .whyLearningHere{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainMiddleH1{
+        font-size: 2rem;
+        width: 70%;
+    }
+    .MiddleContent{
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        display:block;
+        width: 95%;
+    }
+    .benefits{
+        width: 100%;
+        height:max-content;
+        padding-bottom: 10px;
+    }
+    .path3{
+        font-size:1.2rem;
+        border-radius: 25px;
+    }
+    .contentH2{
+        font-size: 1.4rem;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+    .contentH{
+        font-size: 2rem;
+    }
+    .BottomH1{
+        font-size: 2rem;
+    }
+    .footer{
+        font-size: 1rem;
+        height: 20vh;
+    }
+}
+@media  screen and (max-width: 414px) {   
+    .contentP{
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        line-height: 1rem;
+    }
+    .contentH2{
+        font-size: 1.3rem;
+        width: 90%;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+    .contentH{
+        font-size: 2rem;
+    }
+    .BottomSub{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .path3{
+        font-size:1.5rem;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .BottomH1{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 375px){
+    .contentP{
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        line-height: 1rem;
+    }
+    .contentH2{
+        font-size: 1.2rem;
+        width: 90%;
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+    .contentH{
+        font-size: 1.9rem;
+    }
+    .mainMiddleH1{
+        width: 50%;
+    }
+    .MiddleH2{
+        font-size: 1.5rem;
+    }
+    .BottomSub{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .path3{
+        font-size:1.5rem;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .BottomH1{
+        font-size: 1.4rem;
+    }
+}
+@media  screen and (max-width: 360px) {
+    .contentP{
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        line-height: 1rem;
+    }
+    .contentH2{
+        font-size: 1.2rem;
+        width: 90%;
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+    .contentH{
+        font-size: 1.9rem;
+    }
+    .mainMiddleH1{
+        width: 50%;
+    }
+    .MiddleH2{
+        font-size: 1.5rem;
+    }
+    .BottomSub{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .path3{
+        font-size:1.5rem;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .BottomH1{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 320px){
+    .mainTop{
+        height: 100%;
+    }
+    .contentP{
+        font-size: 10px;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        line-height: 1rem;
+    }
+    .whyLearningHere{
+        margin-top: 100px;
+    }
+    .mainMiddleH1{
+        font-size: 1rem;
+        width: 40%;
+    }
+    .MiddleH2{
+        font-size: 1rem ;
+    }
+    .MiddleContent{
+        margin-left: 1%;
+        margin-right: 1%;
+        display:block;
+        width: 98%;
+    }
+    .benefits{
+        padding-top: 10px;
+        width: 100%;
+        border-radius: 15px;
+    }
+    .path3{
+        width: 90%;
+        font-size:1.1rem;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .contentH2{
+        font-size: 1rem;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+    .contentH{
+        font-size: 1.2rem;
+    }
+    .mainBottom{
+        height: 60vh;
+        margin-top: 50px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        align-items: center;
+    }
+    .BottomH1{
+        font-size: 1.3rem;
+    }
+    .footer{
+        font-size: 12px;
+        height: 16vh;
+    }
+}
